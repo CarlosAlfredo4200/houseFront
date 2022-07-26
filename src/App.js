@@ -1,12 +1,11 @@
-import hero from './img/hero.jpg'
+import Header from './components/Header';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hola Carlos</h1>
-     <img src={hero} alt="hero"/>
-    </div>
+    <div>
+     <Header />
+     </div>
   );
 }
 

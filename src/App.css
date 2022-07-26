@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* --- CSS custom properties --- */
+
+:root {
+  --gris: #343A40;
+
+  --fuenteTerciaria: 'Playfair Display', serif;
+  --fuentePrincipal: 'Raleway', sans-serif;
+  --fuenteSecundaria: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,h2,h3{
+  font-weight: 900;
+  margin: 1rem 0 4rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 5.8rem;
+}
+
+h3{
+  font-size: 5rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 80%;
+ 
+}
+
+.btn{
+  color: var(--gris);
+  background-color: white;
+  border: 1px solid var(--gris);
+  padding: .5rem 2rem;
+  transition: background-color .3s;
+}
+
+.btn:hover{
+  background-color: #343A40;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* --- Utilidades --- */
+
+.text-center{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mt-5{
+  margin-top: 5rem;
+}
+
+/* --- header --- */
+
+.header{
+  min-width: 60rem;
+  background-image: url(./img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-position:  center;
+  
+}
+
+.slogan{
+  color: white;
+}
+
+
+
+.contenido-header{
+  display: flex;
+  flex-direction: column;
+  height: calc(20rem - 4rem);
+  justify-content: space-between;
+  color: white;
+}
+
+.nombre-sitio{
+  font-weight: 100;
+  text-align: left ;
+  font-size: 2rem;
+}
+
+.nombre-sitio span{
+  font-weight: 900;
+  gap: 1;
+}
+
+.barra{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
 }
