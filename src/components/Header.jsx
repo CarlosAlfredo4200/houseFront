@@ -39,11 +39,11 @@ const Header = () => {
           </div>
           
         </div>
-      </div>
 
       <div className="slogan">
         <h1>Tu casa en el bosque</h1>
         <p>Construimos la casa d tus sueños</p>
+      </div>
       </div>
     </div>
   );

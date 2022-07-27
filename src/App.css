@@ -23,6 +23,7 @@ h1,h2,h3{
 
 h1{
   font-size: 3rem;
+  color: white;
 }
 
 h2{
@@ -46,9 +47,10 @@ img{
 }
 
 .contenedor{
-  max-width: 120rem;
+  max-width: 90rem;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
+  
  
 }
 
@@ -78,43 +80,142 @@ img{
 /* --- header --- */
 
 .header{
-  min-width: 60rem;
+  min-height: 10rem;
   background-image: url(./img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
-  background-position:  center;
+  background-position: center;
+   
+   
   
 }
 
-.slogan{
-  color: white;
-}
 
-
+ 
 
 .contenido-header{
   display: flex;
   flex-direction: column;
-  height: calc(20rem - 4rem);
+  height: 700px;
   justify-content: space-between;
   color: white;
 }
 
 .nombre-sitio{
-  font-weight: 100;
-  text-align: left ;
-  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px){
+  .nombre-sitio{
+    font-size: 4rem;
+  }
 }
 
 .nombre-sitio span{
   font-weight: 900;
-  gap: 1;
 }
 
-.barra{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
+@media (min-width: 768px){
+  .barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px){
+  .contacto{
+    align-items: flex-end;
+  }
+}
+
+.telefono{
+  display: flex;
+}
+
+.telefono::before{
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(./img/telefono.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1rem;
+}
+
+.header a{
+  font-size: 1.5rem;
+}
+
+.navegacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navegacion a{
+  border-radius: 8px;
+  transition: background-color .3s;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .navegacion a{
+    padding:.2rem 1rem;
+
+  }
+}
+
+.navegacion a:hover{
+  background-color: rgba(240, 238, 238, 0.4);
+  color: black;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  .navegacion{
+    flex-direction: row;
+     
+  }
+}
+
+.slogan{
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .slogan{
+    text-align: right;
+  }
+}
+.slogan h1{
+  font-size: 3rem;
+  margin: 0;
+}
+
+@media (min-width: 768px){
+  .slogan h1{
+    font-size: 4rem;
+  }
+}
+
+.slogan p{
+  margin: 0;
+  line-height: 1;
+}
+
+
+ 
+ 
