@@ -80,13 +80,18 @@ img{
 /* --- header --- */
 
 .header{
-  min-height: 10rem;
+   max-height: 50rem;
   background-image: url(./img/heroC.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
    
-   
+}
+
+@media (min-width: 768px){
+  .header{
+    max-height: 20rem;
+  }
   
 }
 
@@ -102,10 +107,10 @@ img{
 }
 
 .nombre-sitio{
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  font-size: 1.8rem;
-  padding: 3rem 0;
+  font-size: 1.9rem;
+  padding-top: 2rem;
 }
 
 @media (min-width: 768px){
@@ -127,10 +132,15 @@ img{
 }
 
 .contacto{
+  
   display: flex;
+  margin-top: 0;
+  padding-top: 0;
   flex-direction: column;
   align-items: center;
 }
+
+
 
 @media (min-width: 768px){
   .contacto{
@@ -140,8 +150,10 @@ img{
 
 .telefono{
   display: flex;
+  font-weight: 900;
   font-family: var(--fuenteSecundaria);
 }
+
 
 .telefono::before{
   content: '';
@@ -152,10 +164,12 @@ img{
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 1rem;
+   
 }
 
 .header a{
-  font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.7rem;
 }
 
 .navegacion{
@@ -163,6 +177,7 @@ img{
   flex-direction: column;
   align-items: center;
   width: 100%;
+  
 }
 
 .navegacion a{
@@ -203,8 +218,9 @@ img{
   }
 }
 .slogan h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
+  line-height: 1;
 }
 
 @media (min-width: 768px){
